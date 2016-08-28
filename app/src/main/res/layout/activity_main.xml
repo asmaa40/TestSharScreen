@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.infralayer.test.testsharscreen.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:textAllCaps="false"
+        android:id="@+id/but_takeScreenShot"
+        android:layout_margin="20dp"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/but_takeScreenShot"
+        android:id="@+id/iv_capturedImage"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stop_projection"
+        android:textAllCaps="false"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/iv_capturedImage"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        />
+</RelativeLayout>
